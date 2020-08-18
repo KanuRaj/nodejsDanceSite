@@ -1,0 +1,319 @@
+* {
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
+}
+#navbar {
+    min-width: 100%;
+    padding: 7px 4px;
+    background: #030016;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#navbar img {
+    margin:0 40px;
+}
+#navbar ul {
+    display: flex;
+    /* margin: 0 auto; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navbar li {
+    margin: 0 2px;
+    transition: .2s;
+    color: aliceblue;
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#navbar li:hover {
+    background: rgb(108, 255, 243);
+    color: rgb(150, 0, 0);
+}
+#navbar i {
+    margin: 0 5px;
+}
+#navbar a{
+    text-decoration: none;
+}
+#navbar .menu {
+    display: none;
+    color: aliceblue;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    height: 700px;
+    background: center / cover no-repeat url("../static/bg8.jpg");
+    
+}
+#intro .introC{
+    text-align: center;
+    align-items: center;
+    width: 65%;
+}
+#intro h1 {
+    /* max-height: 0; */
+    overflow-y: hidden;
+    font-size: 3rem;
+    border: none;
+    width: auto;
+    /* border-bottom: 4px solid yellow; */
+    text-shadow: 1px 1px 3px rgb(146, 31, 10);
+    animation: efd 3s;
+}
+.introC hr {
+    margin:10px auto;
+    border: none;
+    background: rgb(196, 129, 29);
+    border-radius: 2px;
+    padding: 3px 0;
+    width: 50%;
+    animation: qwerty 1.7s;
+}
+#intro p {
+    /* max-height: 0; */
+    overflow-y: hidden;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 5px auto;
+    color: rgb(217, 219, 216);
+    max-width: 70%;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    /* animation-delay: 1s !important; */
+    animation: efd 4s ease-out;
+    
+}
+#sponsors {
+    height: 100%;
+    background: aliceblue;
+
+}
+#sponsors h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    color: rgb(175, 84, 10);
+}
+#sponsors hr {
+    background: rgb(13, 173, 194);
+    padding: 3px 0;
+    border-radius: 4px;
+    border: none;
+    margin: 2px auto;
+    width: 150px;
+}
+
+#sponsors .logoC {
+    width: 95%;
+    margin: 30px auto;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sponsors .logoC img {
+    width: 150px;
+    border: 3px solid rgb(0, 174, 255);
+    margin: 4px 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#missions {
+    min-height: 350px;
+    background: rgb(154, 208, 255);
+
+}
+#missions h4 {
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    color: rgb(10, 68, 175);
+}
+#missions hr {
+    background: rgb(13, 194, 73);
+    padding: 3px 0;
+    border-radius: 4px;
+    border: none;
+    margin: 2px auto;
+    width: 150px;
+}
+#missions .cardC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#missions .card {
+    border: 2px solid rgb(206, 162, 19);
+    overflow: hidden;
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px;
+    height: auto;
+    background: rgb(206, 162, 19);
+    animation: cardA 1.5s;
+}
+#missions .card h3 {
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+    padding: 12px 0;
+    color: aliceblue;
+    background: rgb(206, 162, 19);
+    /* border-radius: 3px; */
+}
+.cardC img {
+    width: 100%;
+}
+
+
+.abcd {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abcd img {
+    width: 50%;
+    max-height: 500px;
+}
+#footer {
+    height: auto;
+    padding: 10px 0;
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer h5 {
+    margin: 0 15px;
+    vertical-align: bottom;
+    font-size: 1rem;
+    /* margin: 0px auto; */
+    
+}
+@keyframes abc {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes efd {
+    0% {opacity: 0;max-height: 0;}
+    100% {opacity: 1;max-height: 100%;}
+}
+@keyframes qwerty {
+    from {width: 0;}
+    to {width: 50%;}
+}
+@keyframes cardA {
+    from {margin-right: -150px;opacity: 0;}
+    to {margin-right: 20px;opacity: 1;}
+}
+@keyframes cardA2 {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+@media only screen and (max-width:768px){
+    #navbar {
+        display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    }
+    #navbar .menu {
+        position: absolute;
+        display: block;
+        /* display: table-cell !important; */
+        /* vertical-align: middle; */
+        right: 3%;
+        /* margin: 3px 0; */
+        padding: 15px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    #navbar .menu:hover {
+        color: rgb(122, 211, 192);
+        /* background: rgb(255, 112, 112); */
+    }
+
+    #navbar .phoneUl{
+        width: 100%;
+        /* margin-top: 20px !important; */
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        /* margin: 0 !important; */
+        background: rgb(0, 0, 0, 0.7);
+        display: none;
+        text-align: center;
+    }
+    #navbar ul li {
+        margin: 0 !important;
+        padding: 15px 0;
+    }
+    /* #intro {
+        min-height: 600px !important;
+    } */
+    .introC {
+        width: 100% !important;
+    }
+    .introC h1 {
+        font-size: 2.3rem !important;
+        width: 100% !important;
+    }
+    .introC p {
+        font-size: 1rem !important;
+    }
+    .introC hr {
+        width: 50%;
+    }
+    #mission {
+        height: auto !important;
+    }
+    #missions .cardC {
+        display: block;
+        padding-bottom: 20px !important;
+    }
+    #missions .card {
+        margin: 20px auto;
+        width: 90% !important;
+        animation: cardA2 0.7s !important;
+    }
+    #missions .card h3 {
+        font-size: large !important;
+    }
+    #sponsors .logoC {
+        justify-content: start !important;
+    }
+    #sponsors .logoC img {
+        right: 0;
+        width: 120px;
+    }
+    .abcd {
+        display: block !important;
+        background: #000;
+    }
+    .abcd img {
+        width: 100% !important;
+    }
+    #footer h5 {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,23 @@
+extends base.pug
+
+
+block moreStyle
+    style
+        include ../static/ContactStyle.css
+
+block content
+    div.alert
+        span#message
+            | #{msg}
+        i.fa.fa-times.closeAlert
+    div.container#mainFormDiv
+        h1 Contact Us
+            i.fa.fa-envelope(style="margin-left:10px")
+        form.Cform(action="/contact", method="post")
+            input.input(type="text", name="name", placeholder="Enter Your Name",required)
+            input.input(type="phone", name="phone", placeholder="Phone No.",required)
+            input.input(type="email", name="email", placeholder="Email Address",required)
+            input.input(type="text", name="address", placeholder="Your Address",required)
+            input.input(type="text", name="message", placeholder="Type Your Message",required)
+            button.btn(type="submit")
+                | Submit
