@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/KanuRaj/nodejsDanceSite/issues"
   },
-  "homepage": "https://github.com/KanuRaj/nodejsDanceSite#readme",
+  "homepage": "./",
   "dependencies": {
     "express": "^4.17.1",
     "node": "^14.8.0"
