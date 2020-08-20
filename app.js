@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 80;
+// const port = 80;
 // const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/ContactDance', { useNewUrlParser: true });
 
@@ -52,6 +52,6 @@ app.post('/contact', (req, res) => {
 
 
 // START THE SERVER
-app.listen(port, () => {
+app.listen("https://ml-danceacademy.herokuapp.com/', () => {
     console.log(`The application started successfully on port ${port}`);
 });
