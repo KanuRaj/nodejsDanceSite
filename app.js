@@ -52,6 +52,6 @@ app.post('/contact', (req, res) => {
 
 
 // START THE SERVER
-app.listen("https://ml-danceacademy.herokuapp.com/', () => {
-    console.log(`The application started successfully on port ${port}`);
+app.listen(8000, () => {
+    console.log(`The application started successfully on port`);
 });
